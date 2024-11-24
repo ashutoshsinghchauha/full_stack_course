@@ -1,0 +1,12 @@
+what is Internet and how it works?
+    The internet is a global network of interconnected computers and servers that allows people to access and share information, communicate, and perform a wide range of activities online. It connects billions of devices worldwide using standardized communication protocols like TCP/IP.
+
+    How the Internet Works
+    Infrastructure: The internet relies on a vast infrastructure of physical cables (fiber optics, copper wires, etc.), satellite links, and wireless systems.
+    Protocols: Communication happens through protocols like HTTP, FTP, and SMTP that define how data is transmitted and received.
+    IP Addresses: Each device connected to the internet is assigned a unique IP address to identify it.
+    DNS: The Domain Name System (DNS) translates human-readable domain names (e.g., google.com) into IP addresses.
+    Data Transmission: Data is broken into packets that are sent over the network and reassembled at the destination.
+
+what are data types?
+    
