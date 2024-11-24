@@ -9,4 +9,103 @@ what is Internet and how it works?
     Data Transmission: Data is broken into packets that are sent over the network and reassembled at the destination.
 
 what are data types?
-    
+    JavaScript provides several data types to represent and work with different kinds of values. These are categorized into primitive and non-primitive (or reference) types.
+
+    1. Primitive Data Types
+    Primitive data types are immutable (cannot be changed) and are stored directly in memory. They include:
+
+    a) String
+        Represents a sequence of characters.
+        Examples:
+        javascript
+        Copy code
+        let name = "John";
+    let greeting = 'Hello';
+    b) Number
+        Represents numeric values, including integers and floating-point numbers.
+        Examples:
+        javascript
+        Copy code
+        let age = 25;
+        let temperature = 98.6;
+        let negative = -42;
+    c) BigInt
+        Represents integers larger than Number.MAX_SAFE_INTEGER (2^53 - 1).
+        Created by appending n to the end of a number.
+        Example:
+        javascript
+        Copy code
+        let bigNumber = 9007199254740991n;
+    d) Boolean
+        Represents true or false.
+        Examples:
+        javascript
+        Copy code
+        let isLoggedIn = true;
+        let hasAccess = false;
+    e) Undefined
+        A variable that has been declared but not assigned a value.
+        Example:
+        javascript
+        Copy code
+        let x; // x is undefined
+    f) Null
+        Represents the intentional absence of any object value.
+        Example:
+        javascript
+        Copy code
+        let y = null; // y is explicitly set to no value
+    g) Symbol (Introduced in ES6)
+        Represents a unique and immutable value, often used as an object key.
+        Example:
+        javascript
+        Copy code
+        let sym1 = Symbol('id');
+        let sym2 = Symbol('id');
+        console.log(sym1 === sym2); // false
+    2. Non-Primitive (Reference) Data Types
+        These types store collections of data or more complex entities.
+
+        a) Object
+        Represents key-value pairs, arrays, functions, and more.
+        Example:
+        javascript
+        Copy code
+        let person = {
+        name: "Alice",
+        age: 30
+        };
+    b) Array
+        A special type of object for storing ordered collections of values.
+        Example:
+        javascript
+        Copy code
+        let colors = ["red", "green", "blue"];
+    c) Function
+        Represents a block of code designed to perform a particular task.
+        Example:
+        javascript
+        Copy code
+        function greet() {
+        return "Hello!";
+        }
+    d) Date
+        Represents date and time.
+        Example:
+        javascript
+        Copy code
+        let today = new Date();
+        Special Notes
+        Dynamic Typing: JavaScript is dynamically typed, meaning you don't need to declare the data type of a variable explicitly.
+
+        javascript
+        Copy code
+        let x = 10; // x is a number
+        x = "Hello"; // now x is a string
+        Type Checking: Use typeof to check the type of a variable.
+
+        javascript
+        Copy code
+        console.log(typeof "hello"); // "string"
+        console.log(typeof 42); // "number"
+        console.log(typeof null); // "object" (a known JavaScript quirk)
